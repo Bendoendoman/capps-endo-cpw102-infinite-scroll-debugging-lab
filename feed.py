@@ -1,4 +1,4 @@
-posts = [
+posts = [    
     "New campus coffee shop opens",
     "Python workshop this Friday",
     "Robotics club builds a drone",
@@ -22,7 +22,9 @@ page = 0
 feed = []
 
 while True:
-    if page*PAGE_SIZE > len(posts):
+    #added if to fix infinite scroll 
+    #added an equal sign to fix empty list bug
+    if page*PAGE_SIZE >= len(posts):
         print("no more posts")
         break
     
@@ -41,7 +43,8 @@ while True:
     action = input("\nScroll? (y/n): ")
     
     #no yes case, going to swap to match case
-    match action:
+    #added .strip and .lower
+    match action.strip().lower():
         case "y":
             #moved page declaration to case y and changed to += to correctly load more posts
             page += 1
