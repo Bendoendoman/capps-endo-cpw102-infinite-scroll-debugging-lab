@@ -22,6 +22,10 @@ page = 0
 feed = []
 
 while True:
+    if page*PAGE_SIZE > len(posts):
+        print("no more posts")
+        break
+    
     new_posts = fetch_page(page)
 
     for post in new_posts:
@@ -32,6 +36,7 @@ while True:
         print("-", post)
 
     print(f"\nLoaded {len(feed)} posts")
+    
 
     action = input("\nScroll? (y/n): ")
     

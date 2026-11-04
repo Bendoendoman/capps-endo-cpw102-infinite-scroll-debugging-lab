@@ -27,10 +27,10 @@ The program should:
 Users submitted the following tickets with reports of buggy behavior! 
 
 > “Every time I scroll, I see the same three posts added again instead of new ones.”
-#fixed
+#fixed 2nd commit
 
 > “I keep scrolling, but I never reach the end. The app never tells me there are no more posts.”
-
+fixed 3rd commit
 
 > “I typed ‘maybe’ instead of ‘y’ or ‘n’, and it loaded more posts anyway.”
 
