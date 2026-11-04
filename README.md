@@ -25,6 +25,7 @@ Infinite scroll loads more content as you reach the bottom of a feed, keeping ea
 The program should:
 
 - Show the first three posts when the program starts, without asking the user to scroll first.
+
 - When the user enters `y`, add the next three posts in order. If fewer than three remain, add those remaining posts.
 - After loading posts, show all posts loaded so far and a count of how many there are. 
 - After displaying the last posts, the next `y` should print `No more posts.` and end the session. 
