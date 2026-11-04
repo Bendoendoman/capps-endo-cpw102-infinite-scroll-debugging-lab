@@ -34,15 +34,17 @@ while True:
     print(f"\nLoaded {len(feed)} posts")
 
     action = input("\nScroll? (y/n): ")
-    #no yes case, going to swap to match case
     
+    #no yes case, going to swap to match case
     match action:
         case "y":
+            #moved page declaration to case y and changed to += to correctly load more posts
+            page += 1
             continue
         case "n":
             break
 
     
-    page = 0
+
 
 print("Session ended.")
