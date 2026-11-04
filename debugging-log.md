@@ -24,6 +24,7 @@ The program should:
 - Accept uppercase and lowercase answers, including answers with spaces before or after them. For example, `Y` and ` y ` should both work like `y`.
 
 - For any other answer other than case-insensitive `y` or `n`, print `Please enter y or n.` and ask again. 
+
 - Whenever the session ends through quitting or reaching the end of the feed, print `Session ended.` exactly once.
 
 ## User bug report
@@ -58,3 +59,4 @@ anything still uncertain or unresolved. Make code changes in `feed.py`.
 2. fixed infinite scroll by adding in an if statement checking if the list length is shorter than the pagesize*pagenumber
 3. fixed/added case for if there are no posts in the post list by adding an equals sign to the if statement detailed in bullet point 2
 4. added code to format the input correctly no matter the case/empty spaces
+5. tried to fix the issue of incorrect input when scrolling(i.e. not y or n) ran into problem where the scroll still continues despite having a catch case for all other inputs. Added if statement to check if the input is correct. If it is, it runs the code, if not, it doesnt run code and it asks for input again.
