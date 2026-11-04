@@ -39,5 +39,6 @@ while True:
         break
 
     page = 0
+    
 
 print("Session ended.")
